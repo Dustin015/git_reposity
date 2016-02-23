@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<!-- (C) Copyright 2013, MongoDB, Inc. -->
+
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+    <!-- we are moving to remove this file completely -->
+
+    <!-- =========================================================== -->
+    <!-- threads are set in ServerMain                               -->
+    <!-- =========================================================== -->
+
+    <!-- =========================================================== -->
+    <!-- connectors are set in ServerMain                            -->
+    <!-- =========================================================== -->
+
+    <!-- =========================================================== -->
+    <!-- handlers are set in ServerMain                              -->
+    <!-- =========================================================== -->
+
+    <!-- =========================================================== -->
+    <!-- extra options                                               -->
+    <!-- =========================================================== -->
+
+    <Set name="stopAtShutdown">true</Set>
+    <Set name="sendServerVersion">false</Set>
+    <Set name="sendDateHeader">true</Set>
+    <Set name="gracefulShutdown">3000</Set>
+
+</Configure>
